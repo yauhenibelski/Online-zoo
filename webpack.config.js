@@ -28,17 +28,6 @@ module.exports = {
         use: ["style-loader", "css-loader"]
         // use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
-      {test: /\. (png|jpg|svg|gif)$/,
-        loader: 'file-loader',
-          options: {
-            name: '[path][name].[ext]',
-            outputPath: 'images',
-          }
-      },
-
-      {test: /\. (ttf|woff|woff2|eot)$/i,
-        use: [' file-loader']
-      },
       {
         test: /\.js$/,
         enforce: "pre",
@@ -54,7 +43,7 @@ module.exports = {
         new HtmlWebpackPlugin({
           title: 'Gem Puzzle',
           template: './index.html',
-          inject: 'body'
+          // inject: 'body'
         }),
         // new MiniCssExtractPlugin({
         //   filename: 'style.css'
