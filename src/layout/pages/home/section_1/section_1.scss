@@ -1,0 +1,52 @@
+.section-1 {
+  background-color: rgb(56, 57, 57);
+  background-image: url(/layout/pages/home/img/GiantPanda4k.png);
+  background-size: cover;
+  background-position: 0px -80px;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+.container-section_1 {
+  @include container_desktop();
+  &:before {
+    content: '';
+    position: absolute;
+    width: 465px;
+    height: 465px;
+    right: 108px;
+    top: 12px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+}
+.watch-your_favorite {
+  position: absolute;
+  width: 500.31px;
+  height: 400px;
+  right: 0px;
+  top: 86px;
+  font-weight: 700;
+  font-size: 106.496px;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  span {
+    font-weight: 700;
+    color: rgba(255, 238, 46, 1);
+  }
+}
+.watсh-online {
+  @include button_radius();
+  position: absolute;
+  top: 546px;
+  right: 100px;
+
+  &:hover {
+    background-color: $corporate_color_hover;
+  }
+}

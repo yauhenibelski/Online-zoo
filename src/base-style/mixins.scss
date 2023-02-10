@@ -17,3 +17,20 @@
   transform: scale(1.1);
   color: $corporate_color_hover;
 }
+@mixin button_radius() {
+  border-radius: 25px;
+  background-color: $corporate_color;
+  width: 298px;
+  height: 54px;
+  text-transform: uppercase;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: 0.2s;
+  color: white;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  cursor: pointer;
+}
