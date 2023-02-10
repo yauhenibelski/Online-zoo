@@ -1,0 +1,49 @@
+.section-2 {
+  position: relative;
+  width: 100%;
+  background-color: white;
+
+  &:after {
+    content: '';
+    background-image: url(/layout/pages/home/img/flower_foto1.png);
+    background-size: cover;
+    display: block;
+    position: absolute;
+    width: 204px;
+    height: 612px;
+    bottom: 58px;
+    right: 0px;
+    z-index: 0;
+  }
+}
+.container-section_2 {
+  @include container_desktop();
+  height: 682px;
+  display: grid;
+  grid-template-columns: 609px 465px;
+  grid-template-rows: 403px;
+  justify-content: space-between;
+  align-content: center;
+
+  .img-bamboo_cap {
+    background-image: url(/layout/pages/home/img/bamboo-cap.png);
+    background-size: cover;
+  }
+  .section-2_text p:nth-child(1){
+    font-size: 48px;
+    line-height: 121%;
+    margin-bottom: 21px;
+  }
+  .section-2_text p:nth-child(2){
+      line-height: 130%;
+      margin-bottom: 55px;
+  }
+  .section-2_text p:nth-child(3){
+      font-size: 24px;
+      line-height: 120%;
+      margin-bottom: 35px;
+  }
+  .section-2_text p:nth-child(4){
+      line-height: 139%;
+  }
+}

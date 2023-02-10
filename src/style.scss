@@ -4,5 +4,7 @@
 @import './base-style/mixins.scss';
 @import './base-style/colors';
 
-@import './layout/header/style/header.scss';
-@import './layout/pages/home/section_1/section_1.scss';
+@import './layout/header/style/header.scss'; //header
+
+@import './layout/pages/home/section_1/section_1.scss'; //home page
+@import './layout/pages/home/section_2/section_2.scss';
