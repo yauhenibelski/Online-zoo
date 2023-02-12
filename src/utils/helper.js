@@ -1,20 +1,19 @@
-export function createElem (obj) {
-  let elem = document.createElement(`${obj.element}`);
+// eslint-disable-next-line consistent-return
+export function createElem(obj) {
+  const elem = document.createElement(`${obj.element}`);
 
   if (obj.class) {
-      elem.classList.add(`${obj.class}`)
+    elem.classList.add(`${obj.class}`);
   }
   if (obj.value) {
-      elem.innerHTML += `${obj.value}`;
+    elem.innerHTML += `${obj.value}`;
   }
   if (obj.attribute) {
-      elem.setAttribute(obj.attribute.name, obj.attribute.value )
+    elem.setAttribute(obj.attribute.name, obj.attribute.value);
   }
-  if(obj.place) {
+  if (obj.place) {
     obj.place.append(elem);
   } else {
     return elem;
   }
 }
-
-//{place, element, className, value, attribute}

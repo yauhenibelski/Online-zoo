@@ -1,6 +1,8 @@
 import { createElem } from '../../../utils/helper';
 import section1 from './section_1/section_1.html';
 import section2 from './section_2/section_2.html';
+import section3 from './section_3/section_3.html';
+import { addHomePagePats } from './section_3/section_3';
 
 (() => {
   const header = document.querySelector('.header');
@@ -12,4 +14,6 @@ import section2 from './section_2/section_2.html';
   header.after(homePage);
   homePage.insertAdjacentHTML('beforeend', section1);
   homePage.insertAdjacentHTML('beforeend', section2);
+  homePage.insertAdjacentHTML('beforeend', section3);
+  addHomePagePats();
 })();

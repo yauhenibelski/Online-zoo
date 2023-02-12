@@ -1,14 +1,17 @@
-const path = require('path');//модуль node
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
-module.exports = {
-  context: path.resolve(__dirname, 'src'), //говорит где находятся исжодники
-  devtool: 'source-map',
-    entry: './index.js',//точка входа в приложение
+module.exports = ({ develop }) => ({
+  mode: develop ? 'development' : 'production',
+  devtool: develop ? 'source-map' : false,
+
+  context: path.resolve(__dirname, 'src'),
+    entry: './index.js',
     output: {
         path: path.resolve(__dirname, 'docs'),
-        filename: 'bundle.js', //cоздаст папку dist, создаст  bundle.js
+        filename: 'bundle.js',
         clean: true,
   },
   devServer: {
@@ -29,6 +32,13 @@ module.exports = {
         // use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        type: 'asset/resource',
+        generator: {
+            filename: './img/[path][name][ext]',
+        },
+      },
+      {
         test: /\.js$/,
         enforce: "pre",
         use: ["source-map-loader"],
@@ -41,12 +51,20 @@ module.exports = {
   },
   plugins: [
         new HtmlWebpackPlugin({
-          title: 'Gem Puzzle',
+          title: '',
           template: './index.html',
           // inject: 'body'
         }),
         // new MiniCssExtractPlugin({
         //   filename: 'style.css'
-        // })
+        // }),
+        new CopyPlugin({
+          patterns: [
+              {
+                from: path.resolve(__dirname, 'src/layout/pages/home/section_3/img'),
+                to:   path.resolve(__dirname, 'docs/img/pats')
+              }
+            ]
+        })
      ],
-};
+});

@@ -4,5 +4,4 @@ const addHeader = (() => {
   document.body.insertAdjacentHTML('afterbegin', header);
 })();
 
-
 export { addHeader };

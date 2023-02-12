@@ -38,13 +38,9 @@
     color: rgba(255, 238, 46, 1);
   }
 }
-.watсh-online {
+.watch-online {
   @include button_radius();
   position: absolute;
   top: 546px;
   right: 100px;
-
-  &:hover {
-    background-color: $corporate_color_hover;
-  }
 }

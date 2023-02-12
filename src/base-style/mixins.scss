@@ -4,6 +4,11 @@
   height: 100%;
   position: relative;
 }
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @mixin header_text() {
   font-family: 'Roboto';
   font-weight: 500;
@@ -12,6 +17,10 @@
   color: $header_footer_text;
   transition: 0.2s;
   cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    color: $corporate_color_hover;
+  }
 }
 @mixin header_text_hover() {
   transform: scale(1.1);
@@ -33,4 +42,25 @@
   font-size: 16px;
   line-height: 140%;
   cursor: pointer;
+
+  &:hover {
+    background-color: $corporate_color_hover;
+  }
+}
+@mixin buttons_slider() {
+  position: relative;
+    width: 62px;
+    height: 62px;
+    background-color: $corporate_color;
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $corporate_color_hover;
+    }
 }

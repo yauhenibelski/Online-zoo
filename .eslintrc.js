@@ -10,7 +10,7 @@ module.exports = {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "ignorePatterns": [".eslintrc.js"],
+    "ignorePatterns": [".eslintrc.js", "webpack.config.js"],
     "rules": {
         "semi": ["error", "always"],
         "quotes": ["off", "double"],
@@ -19,5 +19,6 @@ module.exports = {
         "import/prefer-default-export": "off",
         "no-console": "off",
         "no-unused-vars": "off",
+        "no-plusplus": "off"
   }
 }
