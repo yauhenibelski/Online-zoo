@@ -17,14 +17,11 @@
   color: $header_footer_text;
   transition: 0.2s;
   cursor: pointer;
+
   &:hover {
-    transform: scale(1.1);
     color: $corporate_color_hover;
+    transform: scale(1.1);
   }
-}
-@mixin header_text_hover() {
-  transform: scale(1.1);
-  color: $corporate_color_hover;
 }
 @mixin button_radius() {
   border-radius: 25px;

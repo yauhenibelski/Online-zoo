@@ -1,0 +1,133 @@
+.footer {
+    position: relative;
+    height: 405px;
+    background: $background_header_footer;
+    padding: 40px 49px 0px 45px;
+}
+.footer-container {
+  @include container_desktop();
+  display: grid;
+  grid-template-columns: 200px 380px;
+  grid-template-rows: 358px;
+  grid-column-gap: 10vw;
+}
+.footer-donate_button {
+  @include button_square();
+  margin-top: 69px;
+}
+.contact-container {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px 12px;
+  align-items: center;
+  justify-items: start;
+}
+.contact-social {
+  display: flex;
+  align-items: center;
+
+  a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  &:hover .contact-logo {
+    background-color: #4B9200;
+  }
+  &:hover a {
+    color: #4B9200;
+  }
+}
+.contact-logo {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  background-color: #BDBDBD;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  transition: 0.2s;
+}
+.container-nav_footer {
+  display: flex;
+  align-self: end;
+  width: 420px;
+  padding: 0px 0px 5px 11px;
+
+  span {
+    @include header_text();
+    margin: auto;
+  }
+}
+.subscribe-to-our-news_text {
+  width: 367px;
+  right: 0;
+  position: absolute;
+
+  label {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+}
+.enter-email{
+  margin-top: 14px;
+  box-sizing: border-box;
+  width: 228px;
+  height: 42px;
+  background-color: #111115;
+  border: 1px solid;
+  border-color: #f9804b;
+  border-radius: 2px;
+  padding-left: 9px;
+  color: #EAF7FE;
+  font-size: 16px;
+  line-height: 140%;
+  display: inline-block;
+
+  &:focus {
+    outline: none;
+  }
+  &:focus:valid {
+    border: 1px solid #4b9200;
+    color:#4b9200
+  }
+  &:focus:invalid {
+    border: 1px solid #920000;
+  }
+  &:focus:valid ~ .submit {
+    border: 1px solid #4b9200;
+    color:#4b9200
+  }
+  &:focus:invalid ~ .submit {
+    border: 1px solid #920000;
+    color:#920000;
+  }
+}
+.submit {
+  margin-left: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #626262;
+  background: #F1F3F2;
+  width: 129px;
+  height: 42px;
+  border: 2px solid #626262;
+  border-radius: 5px;
+}
+.Designed-by-Alisa {
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  font-weight: 100;
+  line-height: 190%;
+  color: #FFFFFF;
+}

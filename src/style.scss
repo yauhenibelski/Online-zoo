@@ -3,13 +3,17 @@
 @import './base-style/variables.scss';
 @import './base-style/mixins.scss';
 @import './base-style/colors';
+@import './components/logo/logo.scss';
 
-//header
+// header
 @import './layout/header/style/header.scss';
 
-//home page
+// home page
 @import './layout/pages/home/section_1/section_1.scss';
 @import './layout/pages/home/section_2/section_2.scss';
 @import './layout/pages/home/section_3/section_3.scss';
 @import './layout/pages/home/section_4/section_4.scss';
 @import './layout/pages/home/section_5/section_5.scss';
+
+// footer
+@import './layout/footer/footer.scss';
