@@ -47,6 +47,10 @@
     background-color: $corporate_color_hover;
   }
 }
+@mixin button_square() {
+  @include button_radius();
+  border-radius: 5px;
+}
 @mixin buttons_slider() {
   position: relative;
     width: 62px;

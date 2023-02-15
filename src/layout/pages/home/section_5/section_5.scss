@@ -1,0 +1,108 @@
+.section-5 {
+  height: 919px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(/layout/pages/home/img/list_foto.png);
+    background-size: cover;
+    width: 248px;
+    height: 274px;
+    right: 0px;
+    bottom: 0px;
+  }
+  .container-section_5 {
+    @include container_desktop();
+    max-width: 1160px;
+    padding-top: 145px;
+    overflow: hidden;
+  }
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #333B41;
+  }
+}
+.testimonials-container {
+  display: flex;
+  justify-content: start;
+  width: 5000px;
+  margin-top: 48px;
+  position: relative;
+  transform: translateX(0px);
+  transition: 1s;
+}
+.testimonial-block {
+    width: 264px;
+    height: 388px;
+    margin-right: 29px;
+    background: linear-gradient(300deg, rgba(252, 112, 0, 0.9), rgba(243, 169, 248, 0.91), rgb(204 211 215));
+    border-radius: 20px;
+    padding: 2px;
+
+    .testimonial {
+      background-color: #F1F3F2;
+      border-radius: 18px;
+      height: 100%;
+      position: relative;
+
+      .info {
+        padding: 13px 0px 0px 61px;
+
+        img {
+          position: absolute;
+          top: 13px;
+          left: 14px;
+          width: 37px;
+          height: 37px;
+        }
+
+        .name {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 120%;
+        }
+        .user_local {
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 120%;
+          color: #BDBDBD;
+        }
+      }
+
+      .testimonial-text_block {
+        margin: 11px 14px 0px 14px;
+
+        p {
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 120%;
+          color: #767474;
+        }
+      }
+    }
+}
+.scroll {
+  display: block;
+  -webkit-appearance: none;
+  width: 599px;
+  height: 8px;
+  margin: 20px auto 32px;
+  background-color: rgba(245, 247, 246, 1);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.scroll::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12.5%;
+  height: 6px;
+  border-radius: 5px;
+  background: $corporate_color;
+  cursor:pointer;
+}
+.leave-feedback {
+  @include button_square();
+}

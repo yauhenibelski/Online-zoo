@@ -63,6 +63,10 @@ module.exports = ({ develop }) => ({
               {
                 from: path.resolve(__dirname, 'src/layout/pages/home/section_3/img'),
                 to:   path.resolve(__dirname, 'docs/img/pats')
+              },
+              {
+                from: path.resolve(__dirname, 'src/layout/pages/home/section_5/user_logo'),
+                to:   path.resolve(__dirname, 'docs/img/user_icon')
               }
             ]
         })
