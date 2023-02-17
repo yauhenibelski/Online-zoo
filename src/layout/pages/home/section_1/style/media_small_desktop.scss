@@ -1,0 +1,24 @@
+@media (max-width: $small_desktop) {
+  .section-1 {
+    height: 584px;
+    // background-image: url(/layout/pages/home/img/GiantPanda.png);
+    background-position-x: +50%;
+  }
+  .container-section_1 {
+    &::before {
+      width: 367px;
+      height: 367px;
+      right: 177px;
+      top: -11px;
+    }
+  }
+  .watch-your_favorite {
+    font-size: 85px;
+    right: 35px;
+    top: 44px;
+  }
+  .watch-online {
+    top: 403px;
+    right: 137px;
+  }
+}

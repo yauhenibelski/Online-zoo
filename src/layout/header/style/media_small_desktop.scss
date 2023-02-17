@@ -1,0 +1,9 @@
+@media (max-width: $small_desktop) {
+  .header {
+    position: relative;
+    z-index: 2;
+  }
+  .container-nav {
+    grid-column-gap: 48px;
+  }
+}

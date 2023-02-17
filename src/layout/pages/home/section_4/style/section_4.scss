@@ -92,3 +92,6 @@
   grid-column: 2/5;
   justify-self: center;
 }
+@import './media_small_desktop.scss';
+@import './media_tablet.scss';
+@import './mobile.scss';

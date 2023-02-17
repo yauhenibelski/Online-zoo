@@ -1,0 +1,31 @@
+@media (max-width: $mobile) {
+  .section-1 {
+    height: 221px;
+    background-position-x: 42%;
+    background-position-y: 19px;
+  }
+  .container-section_1 {
+    &::before {
+      width: 120px;
+      height: 120px;
+      right: 38px;
+      top: 56px;
+    }
+  }
+  .watch-your_favorite {
+    font-size: 28px;
+    right: 7px;
+    top: 76px;
+    width: 135.31px;
+  }
+  .watch-online {
+    position: relative;
+    margin: auto;
+  }
+  .watch-online {
+    z-index: 1;
+    margin: auto;
+    right: 0px;
+    top: 241px;
+  }
+}

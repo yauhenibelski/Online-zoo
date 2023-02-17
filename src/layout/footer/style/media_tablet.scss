@@ -1,0 +1,42 @@
+@media (max-width: $tablet) {
+  .footer {
+    height: 269px;
+    padding: 13px 9px 0px 21px;
+  }
+  .footer-container {
+    display: block;
+    height: auto;
+  }
+  .footer-donate_button {
+    margin-top: 32px;
+  }
+  .contact-container {
+    display: block;
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    top: -22px;
+  }
+  .subscribe-to-our-news_text {
+    display: none;
+  }
+  .contact-social {
+    margin-top: 20px;
+
+    span {
+      display: none;
+    }
+  }
+  .container-nav_footer {
+    padding: 0px 0px 5px 0px;
+    margin: 97px 0px 0px 0px;
+
+    span {
+      margin: 0px 37px 0px 0px;
+    }
+  }
+  .Designed-by-Alisa {
+    right: 9px;
+    bottom: 0px;
+  }
+}

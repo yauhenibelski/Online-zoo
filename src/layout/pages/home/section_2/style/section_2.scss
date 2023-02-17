@@ -29,21 +29,26 @@
     background-image: url(/layout/pages/home/img/bamboo-cap.png);
     background-size: cover;
   }
-  .section-2_text p:nth-child(1){
+   p:nth-child(1){
     font-size: 48px;
     line-height: 121%;
     margin-bottom: 21px;
   }
-  .section-2_text p:nth-child(2){
+   p:nth-child(2){
       line-height: 130%;
       margin-bottom: 55px;
   }
-  .section-2_text p:nth-child(3){
+   p:nth-child(3){
       font-size: 24px;
       line-height: 120%;
       margin-bottom: 35px;
   }
-  .section-2_text p:nth-child(4){
+   p:nth-child(4){
       line-height: 139%;
   }
 }
+
+@import './media_max_1500px.scss';
+@import './media_small_desktop.scss';
+@import './media_tablet.scss';
+@import './mobile.scss';

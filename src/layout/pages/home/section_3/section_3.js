@@ -1,7 +1,7 @@
 import { animals } from "./animals";
 
 export function addHomePagePats() {
-  const j = window.innerWidth > 640 ? 6 : 4;
+  const j = window.innerWidth > 990 ? 6 : 4;
   const petsWrapper = document.querySelector('.pets');
 
   for (let i = 0; i < j; i++) {

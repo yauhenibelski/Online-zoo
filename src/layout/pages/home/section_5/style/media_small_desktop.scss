@@ -1,0 +1,26 @@
+@media (max-width:$small_desktop) {
+  .section-5 {
+    height: 842px;
+
+    &::before {
+      width: 196px;
+      height: 238px;
+    }
+    .container-section_5 {
+      padding-top: 103px;
+      max-width: 940px;
+    }
+  }
+  .testimonials-container {
+    margin-top: 31px;
+  }
+  .testimonial-block {
+    width: 288px;
+    height: 387px;
+    margin-right: 32px;
+  }
+  .scroll {
+    width: 390px;
+    margin: 20px auto 53px;
+  }
+}

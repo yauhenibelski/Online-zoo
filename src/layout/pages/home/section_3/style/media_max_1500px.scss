@@ -1,0 +1,16 @@
+@media (max-width: 1500px) {
+  .pets-container {
+    height: 770px;
+    width: 1150px;
+    margin: auto;
+  }
+  .pets {
+    grid-template: repeat(2, 374px) / repeat(3, 314px);
+    width: 997px;
+  }
+  .section-3{
+    .choose-your_favorite {
+      margin: 50px auto;
+    }
+  }
+}

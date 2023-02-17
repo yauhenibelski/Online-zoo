@@ -1,0 +1,40 @@
+@media (max-width: $tablet) {
+  .section-5 {
+    padding-top: 63px;
+    height: 605px;
+
+    &::before {
+      width: 126px;
+      height: 136px;
+      right: -8px;
+    }
+
+    .container-section_5 {
+      padding-top: 0px;
+    }
+  }
+  .testimonials-container {
+    display: block;
+    margin: auto;
+    width: 94%;
+    height: 380px;
+    overflow-x: scroll;
+    margin-top: 15px;
+  }
+  .testimonial-block {
+    width: auto;
+    height: 109px;
+    margin-top: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px auto;
+  }
+  .scroll {
+    display: none;
+  }
+  .leave-feedback {
+    margin: 33px auto;
+    width: 240px;
+  }
+}
+

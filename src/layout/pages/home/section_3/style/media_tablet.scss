@@ -1,0 +1,51 @@
+@media (max-width: $tablet) {
+  .section-3 {
+    height: 1001px;
+
+    &::before {
+      width: 196px;
+      height: 202px;
+      left: -62px;
+    }
+    &::after {
+      width: 176px;
+      height: 131px;
+    }
+    .choose-your_favorite {
+      margin-top: 39px;
+    }
+  }
+  .container-section_3 {
+    padding-top: 8px;
+  }
+  .pets-container {
+    max-width: 600px;
+  }
+  .pets{
+    grid-template: repeat(2, 332px) / repeat(2, 285px);
+    grid-gap: 90px 28px;
+  }
+  .animals-block_foto {
+    height: 86%;
+  }
+  .pets-buttons {
+    width: 26%;
+  }
+  .animals-block_content {
+    padding-top: 3px;
+    padding-left: 10px;
+  }
+  .animals-block_text {
+    h2 {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+  }
+  .eating {
+    margin: 0px 8px 0px 0px;
+    width: 50px;
+    height: 30px;
+  }
+}

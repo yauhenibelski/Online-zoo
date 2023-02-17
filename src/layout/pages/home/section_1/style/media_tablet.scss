@@ -1,0 +1,26 @@
+@media (max-width: $tablet) {
+  .section-1 {
+    height: 373px;
+    background-position: 0px 0px;
+    background-position-x: +50%;
+  }
+  .container-section_1 {
+    &::before {
+      width: 237.6px;
+      height: 237.6px;
+      right: 71px;
+      top: 44px;
+    }
+  }
+  .watch-your_favorite {
+    font-size: 54px;
+    right: 35px;
+    top: 83px;
+    width: 230.31px;
+    height: auto;
+  }
+  .watch-online {
+    top: 279px;
+    right: 322px;
+  }
+}

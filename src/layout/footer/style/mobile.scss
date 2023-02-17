@@ -1,0 +1,40 @@
+@media (max-width: $mobile) {
+  .footer {
+    height: 316px;
+    padding: 18px 0px 0px 0px;
+  .logo {
+    border: 0px;
+    margin: auto;
+    width: 140px;
+    height: auto;
+
+    .bamboo {
+      left: 78px;
+      }
+    }
+  }
+  .footer-container {
+    width: 320px;
+  }
+  .footer-donate_button {
+    margin: 84px auto 0px auto ;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -129px;
+    width: 200px;
+  }
+  .Designed-by-Alisa {
+    bottom: 53px;
+  }
+  .container-nav_footer {
+    margin: 64px auto 0px auto;
+    width: 315px;
+
+    span {
+      margin: auto;
+    }
+  }
+}

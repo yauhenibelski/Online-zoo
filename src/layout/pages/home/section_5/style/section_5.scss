@@ -15,7 +15,6 @@
   }
   .container-section_5 {
     @include container_desktop();
-    max-width: 1160px;
     padding-top: 145px;
     overflow: hidden;
   }
@@ -36,7 +35,7 @@
 }
 .testimonial-block {
     width: 264px;
-    height: 388px;
+    height: 100%;
     margin-right: 29px;
     background: linear-gradient(300deg, rgba(252, 112, 0, 0.9), rgba(243, 169, 248, 0.91), rgb(204 211 215));
     border-radius: 20px;
@@ -107,3 +106,7 @@
 .leave-feedback {
   @include button_square();
 }
+
+@import './media_small_desktop.scss';
+@import './media_tablet.scss';
+@import './mobile.scss';

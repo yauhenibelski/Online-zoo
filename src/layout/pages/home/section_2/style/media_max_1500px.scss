@@ -1,0 +1,10 @@
+@media (max-width: 1500px) {
+  .section-2 {
+    &::after {
+      display: none;
+    }
+  }
+  .container-section_2 {
+    max-width: 1100px;
+  }
+}

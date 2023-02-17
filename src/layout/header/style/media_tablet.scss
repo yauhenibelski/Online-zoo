@@ -1,0 +1,32 @@
+@media (max-width: $tablet) {
+  .header {
+    height: 34px;
+    position: fixed;
+
+  .logo {
+    width: 42px;
+    border: 0px;
+    height: auto;
+
+    h1 {
+      font-size: 12px;
+    }
+    .bamboo {
+      width: 8px;
+      height: 13px;
+      left: 2px;
+      bottom: 2px;
+    }
+  }
+  }
+  .nav {
+    padding-left: 21px;
+  }
+  .nav {
+    padding-left: 21px;
+  }
+  .designed,
+  .container-nav {
+    display: none;
+  }
+}

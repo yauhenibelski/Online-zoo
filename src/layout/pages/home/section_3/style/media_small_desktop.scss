@@ -1,0 +1,35 @@
+@media (max-width: $small_desktop) {
+  .section-3 {
+    height: 1116px;
+    &::before {
+      background-image: url(/layout/pages/home/img/palm_foto_small.png);
+      width: 190px;
+      height: 202px;
+    }
+    &::after {
+      width: 241px;
+      height: 180px;
+    }
+    .choose-your_favorite {
+      margin-top: 82px;
+    }
+  }
+  .container-section_3 {
+    max-width: 943px;
+  }
+  .pets-container {
+    height: 800px;
+    width: auto;
+  }
+  .pets {
+    width: auto;
+    grid-template: repeat(2,354px) / repeat(3,294px);
+    grid-gap: 90px 28px;
+  }
+  .animals-block_foto {
+    height: 84%;
+  }
+  .pets-buttons {
+    width: 31%;
+  }
+}

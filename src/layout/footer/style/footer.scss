@@ -23,12 +23,16 @@
   grid-gap: 10px 12px;
   align-items: center;
   justify-items: start;
+
+  a {
+    text-decoration: none;
+  }
 }
 .contact-social {
   display: flex;
   align-items: center;
 
-  a {
+  span {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
@@ -39,7 +43,7 @@
   &:hover .contact-logo {
     background-color: #4B9200;
   }
-  &:hover a {
+  &:hover p {
     color: #4B9200;
   }
 }
@@ -131,3 +135,7 @@
   line-height: 190%;
   color: #FFFFFF;
 }
+
+@import './media_small_desktop.scss';
+@import './media_tablet.scss';
+@import './mobile.scss';

@@ -1,0 +1,33 @@
+@media (max-width: $small_desktop) {
+  .container-section_2 {
+    align-content: start;
+    grid-template-rows: 418px;
+    grid-template-columns: 455px 453px;
+    padding-top: 19px;
+    margin: 0px 31px 0px 30px;
+    height: 529px;
+
+    .img-bamboo_cap {
+      background-image: url(/layout/pages/home/img/bamboo-cap-small.png);
+      background-size: cover;
+      margin-top: 10px;
+    }
+     p:nth-child(1){
+      font-size: 48px;
+      line-height: 121%;
+      margin-bottom: 21px;
+    }
+     p:nth-child(2){
+        line-height: 130%;
+        margin-bottom: 55px;
+    }
+     p:nth-child(3){
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 35px;
+    }
+     p:nth-child(4){
+        line-height: 139%;
+    }
+  }
+}
