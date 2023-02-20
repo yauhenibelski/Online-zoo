@@ -7,7 +7,7 @@ import section5 from './section_5/section_5.html';
 import { addHomePagePats } from './section_3/section_3';
 import { addTestimonial } from './section_5/section_5';
 
-(() => {
+function addHomePage() {
   const header = document.querySelector('.header');
   const homePage = createElem({
     element: 'main',
@@ -22,4 +22,6 @@ import { addTestimonial } from './section_5/section_5';
   homePage.insertAdjacentHTML('beforeend', section5);
   addHomePagePats();
   addTestimonial();
-})();
+}
+
+export { addHomePage };

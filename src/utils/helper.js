@@ -1,4 +1,3 @@
-// eslint-disable-next-line consistent-return
 export function createElem(obj) {
   const elem = document.createElement(`${obj.element}`);
 

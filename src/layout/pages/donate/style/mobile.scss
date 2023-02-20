@@ -1,0 +1,111 @@
+@media (max-width: $mobile) {
+  .donate-page {
+    padding-bottom: 21px;
+  }
+  .head-donate_img {
+    height: 221px;
+  }
+  .the-zoo-text {
+    margin: 30px 0px 0px 11px;
+    line-height: 124%;
+  }
+  .even-though {
+    margin: 17px 15px 0px 11px;
+  }
+  .donation-information {
+    margin: 26px 0px 0px 11px;
+    font-size: 24px;
+  }
+  .pick-and-feed-a-friend_container {
+    height: 591px;
+    margin: 30px 10px 0px 10px;
+    padding: 0px;
+  }
+  .pick-and-feed-a-friend_text {
+    font-size: 24px;
+    margin-top: 21px;
+  }
+  .we-know-the-animals_text {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+  .panda-diet-day {
+    width: 300px;
+    height: 158px;
+    margin: auto;
+
+    .panda-diet_img {
+      width: 160px;
+      right: 0px;
+      top: 14px;
+    }
+    .panda-diet_number {
+      top: 73px;
+      left: 33px;
+      font-size: 42px;
+    }
+    p {
+      top: 114px;
+      font-size: 9px;
+    }
+    .x {
+      /* position: absolute; */
+      top: 84px;
+      left: 93px;
+      transform: scale(0.6);
+    }
+  }
+  .amount {
+    left: 0px;
+  }
+  .progress-bar {
+    margin: 10px 0px 48px 0px;
+    height: 14px;
+  }
+  .progress-bar_line {
+    top: 6px;
+  }
+  .progress-bar_radio {
+    grid-template-columns: repeat(5, 10px);
+    width: auto;
+    margin: auto 19px auto 12px;
+  }
+  .radio-bar_btn {
+    height: 11px;
+    width: 11px;
+    top: 0px;
+
+    &::before {
+      left: -5px;
+      top: -5px;
+      width: 18px;
+      height: 18px;
+    }
+    &::after {
+      top: 17px;
+      left: -6px;
+      font-size: 13px;
+    }
+    p {
+      margin-top: 8px;
+      font-size: 25px;
+      left: 1px;
+      top: -16.5px;
+    }
+  }
+  .dollar {
+    top: 10px;
+  }
+  .input-number {
+    margin-bottom: 25px;
+  }
+  .donate-container {
+    .feed-a-friend-now {
+      margin: 27px auto 31px auto;
+    }
+  }
+  .share-with-your_friends {
+    margin-bottom: 0px;
+    font-size: 15.5px;
+  }
+}

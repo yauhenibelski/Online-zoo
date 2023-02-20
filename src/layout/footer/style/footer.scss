@@ -36,14 +36,14 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: #FFFFFF;
+    color: $header_footer_text;
     text-decoration: none;
     transition: 0.3s;
   }
   &:hover .contact-logo {
     background-color: #4B9200;
   }
-  &:hover p {
+  &:hover span {
     color: #4B9200;
   }
 }
@@ -79,7 +79,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 120%;
-    color: #FFFFFF;
+    color: $header_footer_text;
   }
 }
 .enter-email{
@@ -87,12 +87,12 @@
   box-sizing: border-box;
   width: 228px;
   height: 42px;
-  background-color: #111115;
+  background-color: $background_header_footer;
   border: 1px solid;
-  border-color: #f9804b;
+  border-color: $corporate_color;
   border-radius: 2px;
   padding-left: 9px;
-  color: #EAF7FE;
+  color: $header_footer_text;
   font-size: 16px;
   line-height: 140%;
   display: inline-block;
@@ -121,7 +121,7 @@
   font-weight: 400;
   font-size: 16px;
   color: #626262;
-  background: #F1F3F2;
+  background: $header_footer_text;
   width: 129px;
   height: 42px;
   border: 2px solid #626262;
@@ -133,7 +133,7 @@
   right: 0;
   font-weight: 100;
   line-height: 190%;
-  color: #FFFFFF;
+  color: $header_footer_text;
 }
 
 @import './media_small_desktop.scss';
