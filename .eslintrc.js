@@ -19,6 +19,12 @@ module.exports = {
         "import/prefer-default-export": "off",
         "no-console": "off",
         "no-unused-vars": "off",
-        "no-plusplus": "off"
+        "no-plusplus": "off",
+        "no-use-before-define": ["error", {
+          "functions": false,
+          "classes": true,
+          "variables": true,
+          "allowNamedExports": false
+      }]
   }
 }

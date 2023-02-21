@@ -9,6 +9,12 @@
   padding: 0px 30px 0px 30px;
   align-items: center;
   @include container_desktop();
+
+  .designed {
+    @include header_text();
+    justify-self: end;
+    text-decoration: none;
+  }
 }
 .container-nav {
   display: grid;
@@ -22,11 +28,7 @@
     @include header_text();
   }
 }
-.designed {
-  @include header_text();
-  justify-self: end;
-  text-decoration: none;
-}
+
 
 @import './media_small_desktop.scss';
 @import './media_tablet.scss';

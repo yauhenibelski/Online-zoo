@@ -8,6 +8,9 @@
 // header
 @import './layout/header/style/header.scss';
 
+//burger
+@import './layout/header/style/burger.scss';
+
 // home page
 @import './layout/pages/home/section_1//style/section_1.scss';
 @import './layout/pages/home/section_2/style/section_2.scss';
@@ -17,5 +20,6 @@
 
 // donate
 @import './layout/pages/donate/style/donate.scss';
+
 // footer
 @import './layout/footer/style/footer.scss';
