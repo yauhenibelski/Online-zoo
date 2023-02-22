@@ -40,6 +40,12 @@
   height: 876px;
   margin-bottom: 77px;
 }
+.slider{
+  position: relative;
+  width: 1160px;
+  height: 100%;
+  overflow: hidden;
+}
 .pets {
   display: grid;
   position: absolute;
@@ -110,6 +116,7 @@
   transition: 0.2s;
 }
 .pets-buttons {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   width: 100%;

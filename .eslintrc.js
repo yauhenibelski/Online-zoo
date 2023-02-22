@@ -24,7 +24,9 @@ module.exports = {
           "functions": false,
           "classes": true,
           "variables": true,
-          "allowNamedExports": false
-      }]
+          "allowNamedExports": false,}],
+          "arrow-body-style": "off",
+          "no-param-reassign": "off",
+          "array-callback-return": "off",
   }
 }
