@@ -10,7 +10,7 @@ export function addHomePagePats() {
   for (let i = 0; i < animals.length; i++) {
     const animalHtml = `
                       <div class="animals-block" data-num="${i}">
-                        <img src="img/pats/${animals[i].num}"
+                        <img src="img/pats/pets_${i}.png"
                             class="animals-block_foto"
                             alt="animal">
                         <div class="animals-block_content">
@@ -40,7 +40,6 @@ function addSlide(e) {
   const slider = document.querySelector('.slider');
   const firstSlide = slider.firstElementChild;
   const newPatsSlide = createNewSlide();
-
   const [leftSlideButton, rightSlideButton] = document.querySelector('.pets-buttons').children;
 
   if (e.currentTarget.classList.contains('button-right')) {
@@ -83,6 +82,7 @@ function createNewSlide() { // unique animals
     e = e.dataset.num;
     return e;
   });
+
   const newPets = animalsHtml.filter((elem) => {
     const [html, num] = elem;
     return !activePetsNum.includes(`${num}`);
@@ -101,7 +101,8 @@ function createNewSlide() { // unique animals
     });
 
     const randomPet = animalsHtml.sort(() => Math.random() - 0.5)[0];
-    if (!newPetsNum.includes(randomPet[0])) {
+
+    if (!newPetsNum.includes(randomPet[1])) {
       newPets.push(randomPet);
     }
   }

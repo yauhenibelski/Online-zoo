@@ -1,9 +1,9 @@
 import { testimonial } from "./testimonials";
+import { createElem } from "../../../../utils/helper";
 
 export function addTestimonial() {
   const testimonialsContainer = document.querySelector('.testimonials-container');
 
-  // eslint-disable-next-line no-restricted-syntax
   for (const i of testimonial) {
     testimonialsContainer.insertAdjacentHTML('beforeend', `
     <div class="testimonial-block">
@@ -18,4 +18,44 @@ export function addTestimonial() {
             </div>
         </div>`);
   }
+
+  const scroll = document.querySelector('.scroll');
+  const testimonialBlockStyle = getComputedStyle(testimonialsContainer.firstElementChild);
+  const testimonialMarginR = parseInt(testimonialBlockStyle.marginRight, 10);
+  const testimonialWidth = parseInt(testimonialBlockStyle.width, 10);
+  scroll.oninput = () => {
+    testimonialsContainer.style.transform = `
+                  translateX(-${(testimonialWidth + testimonialMarginR) * scroll.value}px)`;
+  };
+
+  for (const key of testimonialsContainer.children) {
+    key.onclick = testimonialPopUp;
+  }
+}
+
+function testimonialPopUp() {
+  const popUpContainer = createElem({
+    element: 'div',
+    class: 'pop-up_container',
+  });
+
+  popUpContainer.append(this.cloneNode(true));
+  document.body.append(popUpContainer);
+
+  document.body.style.overflow = 'hidden';
+
+  setTimeout(() => {
+    popUpContainer.classList.toggle('testimonial-opacity');
+  }, 40);
+
+  popUpContainer.onclick = (e) => {
+    if (!e.target.classList.contains('pop-up_container')) return;
+
+    document.body.style.overflow = 'auto';
+    popUpContainer.classList.toggle('testimonial-opacity');
+
+    setTimeout(() => {
+      popUpContainer.remove();
+    }, 300);
+  };
 }

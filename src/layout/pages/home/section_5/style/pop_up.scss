@@ -1,0 +1,37 @@
+.pop-up_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000006e;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 3;
+
+  .testimonial-block {
+    position: relative;
+    height: 391px;
+    width: 288px;
+    margin: 0px;
+    left: 14px;
+    cursor: auto;
+  }
+
+  &::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: -172px;
+    left: -17px;
+    background-image: url(/layout/pages/home/section_5/img/x_icon.svg);
+    cursor: pointer;
+  }
+}
+.testimonial-opacity {
+  opacity: 1;
+}

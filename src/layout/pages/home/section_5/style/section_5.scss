@@ -2,6 +2,7 @@
   height: 921px;
   position: relative;
   overflow: hidden;
+  background-color: rgb(255, 255, 255);
 
   &::before {
     content: '';
@@ -36,11 +37,13 @@
 .testimonial-block {
     width: 264px;
     height: 100%;
+    box-sizing: border-box;
     margin-right: 29px;
     background: linear-gradient(300deg, rgba(252, 112, 0, 0.9), rgba(243, 169, 248, 0.91), rgb(204 211 215));
     border-radius: 20px;
     padding: 2px;
     overflow: hidden;
+    cursor: pointer;
 
     .testimonial {
       background-color: #F1F3F2;
@@ -106,7 +109,7 @@
 .leave-feedback {
   @include button_square();
 }
-
+@import './pop_up.scss';
 @import './media_small_desktop.scss';
 @import './media_tablet.scss';
 @import './mobile.scss';

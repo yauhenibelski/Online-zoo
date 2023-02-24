@@ -28,5 +28,6 @@ module.exports = {
           "arrow-body-style": "off",
           "no-param-reassign": "off",
           "array-callback-return": "off",
+          "no-restricted-syntax": "off",
   }
 }
