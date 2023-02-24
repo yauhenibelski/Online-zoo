@@ -6,4 +6,5 @@ import { addFooter } from "./layout/footer/footer";
 
 addHeader();
 addFooter();
-addHomePage();
+// addHomePage();
+addDonatePage();
