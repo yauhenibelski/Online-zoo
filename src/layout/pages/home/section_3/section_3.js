@@ -1,11 +1,12 @@
 import { animals } from "./animals";
 import { createElem } from "../../../../utils/helper";
 
-const animalsHtml = [];
+let animalsHtml;
 
 export function addHomePagePats() {
   const j = window.innerWidth > 990 ? 6 : 4;
   const petsWrapper = document.querySelector('.pets');
+  animalsHtml = [];
 
   for (let i = 0; i < animals.length; i++) {
     const animalHtml = `
