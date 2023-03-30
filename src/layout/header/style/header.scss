@@ -10,6 +10,11 @@
   align-items: center;
   @include container_desktop();
 
+  .map,
+  .contact,
+  .zoos {
+    cursor: no-drop;
+  }
   .designed {
     @include header_text();
     justify-self: end;

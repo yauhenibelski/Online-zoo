@@ -5,7 +5,7 @@
 }
 .head-donate_img {
   height: 386px;
-  background-image: url(/layout/pages/donate/img/panda_bg.png);
+  background-image: url(/layout/pages/donate/img/panda_bg_sm.png);
   background-size: cover;
 }
 .donate-container {
@@ -14,6 +14,7 @@
   .feed-a-friend-now {
     @include button_radius();
     margin: 30px auto;
+    cursor: no-drop;
   }
 }
 .the-zoo-text {

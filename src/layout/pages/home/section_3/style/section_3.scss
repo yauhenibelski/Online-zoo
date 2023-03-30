@@ -26,6 +26,7 @@
   .choose-your_favorite {
     @include button_radius();
     margin: auto;
+    cursor: no-drop;
   }
 }
 .container-section_3 {
@@ -127,10 +128,6 @@
 .button-right {
   @include buttons_slider();
   transform: rotate(-180deg);
-}
-.choose-your_favorite {
-  @include button_radius();
-  margin: auto;
 }
 
 @import './media_max_1500px.scss';

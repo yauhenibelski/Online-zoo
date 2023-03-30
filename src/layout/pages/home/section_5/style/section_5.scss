@@ -108,6 +108,7 @@
 }
 .leave-feedback {
   @include button_square();
+  cursor: no-drop;
 }
 @import './pop_up.scss';
 @import './media_small_desktop.scss';

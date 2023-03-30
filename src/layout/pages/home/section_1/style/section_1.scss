@@ -1,5 +1,5 @@
 .section-1 {
-  background-image: url(/layout/pages/home/img/GiantPanda4k.png);
+  background-image: url(/layout/pages/home/img/GiantPanda4k-min.png);
   background-size: cover;
   background-position: 0px -80px;
   background-repeat: no-repeat;
@@ -43,6 +43,7 @@
   position: absolute;
   top: 546px;
   right: 100px;
+  cursor: no-drop;
 }
 
 @import './media_small_desktop.scss';

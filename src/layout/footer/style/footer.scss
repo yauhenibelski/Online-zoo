@@ -3,6 +3,12 @@
     height: 405px;
     background: $background_header_footer;
     padding: 40px 49px 0px 45px;
+
+  .map,
+  .contact,
+  .zoos {
+    cursor: no-drop;
+  }
 }
 .footer-container {
   @include container_desktop();
